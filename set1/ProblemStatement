@@ -1,3 +1,5 @@
+link -https://community.topcoder.com/stat?c=problem_statement&pm=14655&rd=16976
+
 Problem Statement
     	Elly has a String S containing uppercase letters from the English alphabet. The girl can either do nothing, or she can take exactly one action: she can change all occurrences of one letter into another letter (e.g., change all 'T's into 'C's). The "score" of the resulting word is defined as the sum of the squared number of occurrences of each letter.
 
