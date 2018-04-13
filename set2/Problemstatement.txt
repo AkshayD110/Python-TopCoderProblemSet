@@ -1,0 +1,82 @@
+https://community.topcoder.com/stat?c=problem_statement&pm=14654&rd=16976
+
+Problem Statement
+    	Elly has two strings of the same length: A and B. Now she wants to transform A into an anagram of B by changing some of its letters. The only operation the girl can make is to increment some (possibly none or all) characters in A. E.g., she can change an 'A' to a 'B', or a 'K' to an 'L'. She can increment each character arbitrarily many times. E.g., she can increment an 'A' three times to get a 'D'. The incrementation is cyclic: if she increments a 'Z', she gets an 'A' again.
+
+
+
+For example, she can transform "ELLY" to "KRIS" character by character by shifting 'E' to 'K' (6 operations), 'L' to 'R' (again 6 operations), the second 'L' to 'I' (23 operations, going from 'Z' to 'A' on the 15-th operation), and finally 'Y' to 'S' (20 operations, again cyclically going from 'Z' to 'A' on the 2-nd operation). The total number of operations would be 6 + 6 + 23 + 20 = 55. However, to make "ELLY" an anagram of "KRIS" it would be better to change it to "IRSK" with only 29 operations.
+
+
+
+You are given the Strings A and B. Find the minimal number of operations needed to transform A into some other string X, such that X is an anagram of B.
+
+Definition
+
+Class:	EllysAnagrams
+Method:	getCount
+Parameters:	String, String
+Returns:	int
+Method signature:	int getCount(String A, String B)
+(be sure your method is public)
+
+
+Notes
+-	We call two strings X and Y anagrams of each-other if we can re-arrange the letters in one of them to get the other.
+
+Constraints
+-	A and B will be between 1 and 50 characters long.
+-	A and B will have the same length.
+-	A and B will contain only uppercase letters from the English alphabet ('A'-'Z').
+
+Examples
+0)
+
+
+"ELLY"
+
+"KRIS"
+
+Returns: 29
+
+The example from the problem statement.
+1)
+
+
+"TOPCODER"
+
+"TCOINDIA"
+
+Returns: 57
+
+Several of the letters are present in both strings.
+2)
+
+
+"HARDEST"
+
+"THREADS"
+
+Returns: 0
+
+The first string is already an anagram of the second.
+3)
+
+
+"AAAAAAAAAA"
+
+"ZZZZZZZZZZ"
+
+Returns: 250
+
+Some strings may require many operations.
+4)
+
+
+"AWIODJGWAMBAUWNMQEROAIQWYRZSVEPTT"
+
+"BNSIAELDALCGAWOPIWEQTYCNAZEKJXVYU"
+
+Returns: 105
+
+Random keystrokes.
