@@ -24,7 +24,6 @@ def score_calculation(word):
     print(total_score)
 
 
-
 word=input("Enter the input word [all upper case]:")
 score_calculation(word)
 
