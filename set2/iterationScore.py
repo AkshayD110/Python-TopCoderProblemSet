@@ -24,5 +24,7 @@ class iterationScore(object):
 
     def score_calculator(self):
         #write the score calcutaion logic here
-        word1_ls=list(self.word1)
-        word2_ls=list(self.word2)
+        word1_ls=list(self.word1).sort()
+        word2_ls=list(self.word2).sort()
+        print(f"I am word1 = {word1_ls}")
+        print(f"I am word2 = {word2_ls}")
