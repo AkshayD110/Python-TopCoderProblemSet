@@ -7,6 +7,8 @@ def main():
     word2 = word2.upper()
     if (len(word1) != len(word2)):
         raise ValueError("Both the words need to be of same lenght")
+    if (len(word1) and len(word2) > 50):
+        raise ValueError(f"Length of {word1} and {word2} should be less than 50 characters")
     get_score_obj = iterationScore.iterationScore(word1, word2)
     get_score_obj.score_calculator()
 
