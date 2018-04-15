@@ -5,6 +5,7 @@ def main():
     word2 = input("Enter your second word")
     word1 = word1.upper()
     word2 = word2.upper()
+    #below two conditions check the input condition
     if (len(word1) != len(word2)):
         raise ValueError("Both the words need to be of same lenght")
     if (len(word1) and len(word2) > 50):
