@@ -28,5 +28,7 @@ class iterationScore(object):
         word2_ls=list(self.word2)
         word1_ls.sort()
         word2_ls.sort()
-        print(f"I am word1 = {word1_ls}")
-        print(f"I am word2 = {word2_ls}")
+        #print(f"I am word1 = {word1_ls}")
+        #print(f"I am word2 = {word2_ls}")
+        for i in range(len(word1_ls)):
+            #logic to comapare and change the score
