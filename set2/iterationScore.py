@@ -32,3 +32,5 @@ class iterationScore(object):
         #print(f"I am word2 = {word2_ls}")
         for i in range(len(word1_ls)):
             #logic to comapare and change the score
+	    char1_ord = ord('word1_ls[i]')
+	    char2_ord = ord('word2_ls[i]')
